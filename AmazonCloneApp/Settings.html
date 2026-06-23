@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings - Amazon Clone</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+.setting-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin:10px 0;
+    background:#f5f5f5;
+    border-radius:10px;
+}
+
+.switch{
+    width:50px;
+    height:25px;
+    cursor:pointer;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .page-box{
+    background:#1e1e1e;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+Amazon<span>Clone</span>
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">
+<i class="fas fa-house"></i>
+Home
+</a>
+
+<a href="cart.html">
+<i class="fas fa-cart-shopping"></i>
+Cart
+</a>
+
+<a href="profile.html">
+<i class="fas fa-user"></i>
+Profile
+</a>
+
+<a href="orders.html">
+<i class="fas fa-box"></i>
+Orders
+</a>
+
+</div>
+
+</header>
+
+<div class="page-box">
+
+<h1>⚙️ Settings</h1>
+
+<div class="setting-item">
+<span>🌙 Dark Mode</span>
+<input type="checkbox"
+class="switch"
+onclick="toggleDarkMode()">
+</div>
+
+<div class="setting-item">
+<span>🔔 Notifications</span>
+<input type="checkbox"
+class="switch"
+checked>
+</div>
+
+<div class="setting-item">
+<span>🔒 Privacy Settings</span>
+<button class="cart-btn">Manage</button>
+</div>
+
+<div class="setting-item">
+<span>👤 Account Settings</span>
+<button class="cart-btn">Open</button>
+</div>
+
+<div class="setting-item">
+<span>🌐 Language</span>
+<select>
+<option>English</option>
+<option>Hindi</option>
+</select>
+</div>
+
+</div>
+
+<script>
+function toggleDarkMode(){
+document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
